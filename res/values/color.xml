@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#DCDCDC</color>
+    <color name="black">#000000</color>
+    <color name="blue">#000080</color>
+    <color name="pink">#FF1493</color>
+    <color name="red">#8B0000</color>
+    <color name="Cyan">#00FFFF</color>
+    <color name="Red">#FF0000</color>
+    <color name="DarkBlue">#00008B</color>
+    <color name="MediumBlue">#0000CD</color>
+    <color name="Azure">#F0FFFF</color>
+    <color name="Lime">#00FF00</color>
+    <color name="Turquoise">#40E0D0</color>
+    <color name="DimGray">#696969</color>
+    <color name="Honeydew">#F0FFF0</color>
+
+</resources>

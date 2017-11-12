@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.Frans.audiorecord.Main_Screen" >
+    <include
+        android:id="@+id/include1"
+        layout="@layout/footer_bar" />
+
+    <ImageButton
+        android:id="@+id/btnUserConfiguration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@null"
+        android:gravity="center"
+        android:src="@drawable/btn_voice" />
+
+    <EditText
+        android:id="@+id/txtMusic"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnUserConfiguration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:ems="8"
+        android:gravity="center"
+        android:maxLength="50"
+        android:textColor="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="@string/audio_name"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16dp" />
+
+</RelativeLayout>

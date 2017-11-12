@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.Frans.audiorecord.MainActivity" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/footer_bar" />
+
+    <ProgressBar
+        android:id="@+id/pbarUploadFile"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="78dp"
+        android:max="4000"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/include1"
+        android:layout_alignLeft="@+id/pbarUploadFile"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/btnRecordAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="62dp"
+            android:src="@drawable/btn_record1_min" />
+
+        <ImageButton
+            android:id="@+id/btnPlayAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="32dp"
+            android:layout_toLeftOf="@+id/btnRecordAudio"
+            android:src="@drawable/btn_play_min" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
